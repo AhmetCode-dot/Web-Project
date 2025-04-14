@@ -1,0 +1,261 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|c:\\users\\ahmet\\desktop\\web\u00F6dev\\t\u0131bbitakipsistem\\t\u0131bbitakipsistem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|solutionrelative:t\u0131bbitakipsistem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|c:\\users\\ahmet\\desktop\\web\u00F6dev\\t\u0131bbitakipsistem\\t\u0131bbitakipsistem\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|solutionrelative:t\u0131bbitakipsistem\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|c:\\users\\ahmet\\desktop\\web\u00F6dev\\t\u0131bbitakipsistem\\t\u0131bbitakipsistem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|solutionrelative:t\u0131bbitakipsistem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|c:\\users\\ahmet\\desktop\\web\u00F6dev\\t\u0131bbitakipsistem\\t\u0131bbitakipsistem\\models\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|solutionrelative:t\u0131bbitakipsistem\\models\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|c:\\users\\ahmet\\desktop\\web\u00F6dev\\t\u0131bbitakipsistem\\t\u0131bbitakipsistem\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|solutionrelative:t\u0131bbitakipsistem\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|c:\\users\\ahmet\\desktop\\web\u00F6dev\\t\u0131bbitakipsistem\\t\u0131bbitakipsistem\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|solutionrelative:t\u0131bbitakipsistem\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|c:\\users\\ahmet\\desktop\\web\u00F6dev\\t\u0131bbitakipsistem\\t\u0131bbitakipsistem\\views\\patient\\myappointments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|solutionrelative:t\u0131bbitakipsistem\\views\\patient\\myappointments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|c:\\users\\ahmet\\desktop\\web\u00F6dev\\t\u0131bbitakipsistem\\t\u0131bbitakipsistem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|solutionrelative:t\u0131bbitakipsistem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|c:\\users\\ahmet\\desktop\\web\u00F6dev\\t\u0131bbitakipsistem\\t\u0131bbitakipsistem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|solutionrelative:t\u0131bbitakipsistem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|c:\\users\\ahmet\\desktop\\web\u00F6dev\\t\u0131bbitakipsistem\\t\u0131bbitakipsistem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|solutionrelative:t\u0131bbitakipsistem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|c:\\users\\ahmet\\desktop\\web\u00F6dev\\t\u0131bbitakipsistem\\t\u0131bbitakipsistem\\views\\patient\\createappointment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|solutionrelative:t\u0131bbitakipsistem\\views\\patient\\createappointment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|c:\\users\\ahmet\\desktop\\web\u00F6dev\\t\u0131bbitakipsistem\\t\u0131bbitakipsistem\\views\\patient\\mydiseases.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|solutionrelative:t\u0131bbitakipsistem\\views\\patient\\mydiseases.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|c:\\users\\ahmet\\desktop\\web\u00F6dev\\t\u0131bbitakipsistem\\t\u0131bbitakipsistem\\views\\patient\\mytests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|solutionrelative:t\u0131bbitakipsistem\\views\\patient\\mytests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|c:\\users\\ahmet\\desktop\\web\u00F6dev\\t\u0131bbitakipsistem\\t\u0131bbitakipsistem\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|solutionrelative:t\u0131bbitakipsistem\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|c:\\users\\ahmet\\desktop\\web\u00F6dev\\t\u0131bbitakipsistem\\t\u0131bbitakipsistem\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5B1EA4B-BCBC-4E4F-9F3F-075C55A32C2E}|T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem.csproj|solutionrelative:t\u0131bbitakipsistem\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "T\u0131bbiTakipSistem\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\appsettings.Development.json",
+              "RelativeToolTip": "T\u0131bbiTakipSistem\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-10T15:08:27.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Program.cs",
+              "RelativeDocumentMoniker": "T\u0131bbiTakipSistem\\Program.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Program.cs",
+              "RelativeToolTip": "T\u0131bbiTakipSistem\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T14:54:46.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Test.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Models\\Test.cs",
+              "RelativeDocumentMoniker": "T\u0131bbiTakipSistem\\Models\\Test.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Models\\Test.cs",
+              "RelativeToolTip": "T\u0131bbiTakipSistem\\Models\\Test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T17:44:00.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "T\u0131bbiTakipSistem\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "T\u0131bbiTakipSistem\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T17:35:11.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "T\u0131bbiTakipSistem\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "T\u0131bbiTakipSistem\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T17:21:36.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "T\u0131bbiTakipSistem\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "T\u0131bbiTakipSistem\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T17:20:44.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "T\u0131bbiTakipSistem\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "T\u0131bbiTakipSistem\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T17:20:32.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateAppointment.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Patient\\CreateAppointment.cshtml",
+              "RelativeDocumentMoniker": "T\u0131bbiTakipSistem\\Views\\Patient\\CreateAppointment.cshtml",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Patient\\CreateAppointment.cshtml",
+              "RelativeToolTip": "T\u0131bbiTakipSistem\\Views\\Patient\\CreateAppointment.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T17:20:31.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MyAppointments.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Patient\\MyAppointments.cshtml",
+              "RelativeDocumentMoniker": "T\u0131bbiTakipSistem\\Views\\Patient\\MyAppointments.cshtml",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Patient\\MyAppointments.cshtml",
+              "RelativeToolTip": "T\u0131bbiTakipSistem\\Views\\Patient\\MyAppointments.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T17:20:30.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MyDiseases.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Patient\\MyDiseases.cshtml",
+              "RelativeDocumentMoniker": "T\u0131bbiTakipSistem\\Views\\Patient\\MyDiseases.cshtml",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Patient\\MyDiseases.cshtml",
+              "RelativeToolTip": "T\u0131bbiTakipSistem\\Views\\Patient\\MyDiseases.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T17:20:28.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MyTests.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Patient\\MyTests.cshtml",
+              "RelativeDocumentMoniker": "T\u0131bbiTakipSistem\\Views\\Patient\\MyTests.cshtml",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\Patient\\MyTests.cshtml",
+              "RelativeToolTip": "T\u0131bbiTakipSistem\\Views\\Patient\\MyTests.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T17:20:19.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "T\u0131bbiTakipSistem\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "T\u0131bbiTakipSistem\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T17:20:15.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "T\u0131bbiTakipSistem\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "T\u0131bbiTakipSistem\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T17:20:10.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "T\u0131bbiTakipSistem\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "T\u0131bbiTakipSistem\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T17:19:51.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "T\u0131bbiTakipSistem\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ahmet\\Desktop\\Web\u00D6dev\\T\u0131bbiTakipSistem\\T\u0131bbiTakipSistem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "T\u0131bbiTakipSistem\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T17:22:07.838Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

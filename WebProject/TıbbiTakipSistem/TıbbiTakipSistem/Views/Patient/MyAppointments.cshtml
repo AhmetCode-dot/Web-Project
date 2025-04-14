@@ -1,0 +1,105 @@
+@model IEnumerable<TıbbiTakipSistem.Models.Appointment>
+
+@{
+    ViewData["Title"] = "Randevularım";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Randevularım</h2>
+        <a asp-action="CreateAppointment" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Yeni Randevu
+        </a>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            Henüz randevunuz bulunmamaktadır.
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var appointment in Model)
+            {
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h5 class="card-title">
+                                        Dr. @appointment.Doctor.Name @appointment.Doctor.Surname
+                                    </h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">
+                                        @if (!string.IsNullOrEmpty(appointment.Doctor.Specialty))
+                                        {
+                                            @appointment.Doctor.Specialty
+                                        }
+                                    </h6>
+                                </div>
+                                <span class="badge @(appointment.Status switch {
+                                    "Beklemede" => "bg-warning",
+                                    "Onaylandı" => "bg-success",
+                                    "İptal Edildi" => "bg-danger",
+                                    "Tamamlandı" => "bg-secondary",
+                                    _ => "bg-secondary"
+                                })">@appointment.Status</span>
+                            </div>
+
+                            <div class="mt-3">
+                                <strong>Randevu Tarihi:</strong>
+                                <p>@appointment.AppointmentDate.ToString("dd MMMM yyyy HH:mm")</p>
+                            </div>
+
+                            @if (!string.IsNullOrEmpty(appointment.Description))
+                            {
+                                <div class="mt-3">
+                                    <strong>Açıklama:</strong>
+                                    <p>@appointment.Description</p>
+                                </div>
+                            }
+
+                            @if (!string.IsNullOrEmpty(appointment.Notes))
+                            {
+                                <div class="mt-3">
+                                    <strong>Notlar:</strong>
+                                    <p>@appointment.Notes</p>
+                                </div>
+                            }
+
+                            @if (appointment.Status == "Beklemede")
+                            {
+                                <form asp-action="CancelAppointment" method="post" class="mt-3">
+                                    <input type="hidden" name="id" value="@appointment.AppointmentId" />
+                                    <button type="submit" class="btn btn-outline-danger btn-sm"
+                                            onclick="return confirm('Randevuyu iptal etmek istediğinizden emin misiniz?')">
+                                        Randevuyu İptal Et
+                                    </button>
+                                </form>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        // Geçmiş randevuların durumunu otomatik güncelle
+        document.addEventListener('DOMContentLoaded', function() {
+            var now = new Date();
+            var appointments = document.querySelectorAll('[data-appointment-date]');
+            
+            appointments.forEach(function(appointment) {
+                var appointmentDate = new Date(appointment.dataset.appointmentDate);
+                if (appointmentDate < now && appointment.dataset.status === 'Onaylandı') {
+                    appointment.querySelector('.badge').className = 'badge bg-secondary';
+                    appointment.querySelector('.badge').textContent = 'Tamamlandı';
+                }
+            });
+        });
+    </script>
+} 

@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="container mt-4">
+    <!-- Hero Section -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <h1 class="display-4 fw-bold">Tıbbi Takip Sistemi</h1>
+            <p class="lead">
+                Sağlık hizmetlerinizi dijital ortamda yönetin. Randevularınızı planlayın,
+                ilaçlarınızı takip edin ve test sonuçlarınıza her an ulaşın.
+            </p>
+            @if (!User.Identity?.IsAuthenticated ?? false)
+            {
+                <div class="d-grid gap-2 d-md-flex">
+                    <a asp-controller="Account" asp-action="Register" class="btn btn-primary btn-lg px-4">
+                        Hemen Başlayın
+                    </a>
+                    <a asp-controller="Account" asp-action="Login" class="btn btn-outline-secondary btn-lg px-4">
+                        Giriş Yapın
+                    </a>
+                </div>
+            }
+        </div>
+        <div class="col-md-6">
+            <img src="~/img/medical-hero.svg" alt="Medical Illustration" class="img-fluid" />
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="row g-4 py-5">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="feature-icon bg-primary bg-gradient text-white rounded-3 mb-3">
+                        <i class="bi bi-calendar-check"></i>
+                    </div>
+                    <h3>Randevu Yönetimi</h3>
+                    <p>
+                        Doktorunuzla kolayca randevu alın, randevularınızı yönetin ve
+                        takip edin.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="feature-icon bg-primary bg-gradient text-white rounded-3 mb-3">
+                        <i class="bi bi-journal-medical"></i>
+                    </div>
+                    <h3>Sağlık Geçmişi</h3>
+                    <p>
+                        Hastalık geçmişinizi, ilaçlarınızı ve test sonuçlarınızı
+                        güvenle saklayın ve takip edin.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <div class="feature-icon bg-primary bg-gradient text-white rounded-3 mb-3">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h3>Güvenli Erişim</h3>
+                    <p>
+                        Tüm sağlık verilerinize güvenli bir şekilde erişin ve
+                        doktorunuzla güvenle paylaşın.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="row py-5">
+        <div class="col-lg-8 mx-auto text-center">
+            <h2>Sağlığınızı Önemsiyoruz</h2>
+            <p class="lead mb-4">
+                Modern sağlık hizmetleri artık parmaklarınızın ucunda. Hemen üye olun
+                ve sağlık takibinizi dijital ortamda yapmaya başlayın.
+            </p>
+            @if (!User.Identity?.IsAuthenticated ?? false)
+            {
+                <a asp-controller="Account" asp-action="Register" class="btn btn-primary btn-lg px-5">
+                    Ücretsiz Üye Olun
+                </a>
+            }
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .feature-icon {
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .feature-icon i {
+            font-size: 2rem;
+        }
+
+        .card {
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+}

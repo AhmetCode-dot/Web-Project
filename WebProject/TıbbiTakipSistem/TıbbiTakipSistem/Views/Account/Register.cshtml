@@ -1,0 +1,100 @@
+@model TıbbiTakipSistem.Models.User
+
+@{
+    ViewData["Title"] = "Kayıt Ol";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">Kayıt Ol</h2>
+                    
+                    <form method="post" asp-action="Register">
+                        @if (!ViewData.ModelState.IsValid)
+                        {
+                            <div class="alert alert-danger">
+                                @Html.ValidationSummary()
+                            </div>
+                        }
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Name" class="form-label">Ad</label>
+                                <input asp-for="Name" class="form-control" required>
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Surname" class="form-label">Soyad</label>
+                                <input asp-for="Surname" class="form-control" required>
+                                <span asp-validation-for="Surname" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label">E-posta</label>
+                            <input asp-for="Email" class="form-control" type="email" required>
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label">Şifre</label>
+                            <input asp-for="Password" class="form-control" type="password" required>
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="isDoctor" name="isDoctor" value="true">
+                                <input name="isDoctor" type="hidden" value="false" />
+                                <label class="form-check-label" for="isDoctor">
+                                    Doktor olarak kayıt ol
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="doctorFields" style="display: none;">
+                            <div class="mb-3">
+                                <label asp-for="Specialty" class="form-label">Uzmanlık Alanı</label>
+                                <input asp-for="Specialty" class="form-control">
+                                <span asp-validation-for="Specialty" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="HospitalInformation" class="form-label">Hastane Bilgisi</label>
+                                <input asp-for="HospitalInformation" class="form-control">
+                                <span asp-validation-for="HospitalInformation" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+                        </div>
+                    </form>
+
+                    <hr class="my-4">
+
+                    <div class="text-center">
+                        <p>Zaten hesabınız var mı? <a asp-action="Login">Giriş Yap</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Doktor alanlarını göster/gizle
+        document.getElementById('isDoctor').addEventListener('change', function() {
+            document.getElementById('doctorFields').style.display = this.checked ? 'block' : 'none';
+        });
+
+        // Form gönderildiğinde butonu devre dışı bırak
+        document.querySelector('form').addEventListener('submit', function() {
+            document.querySelector('button[type="submit"]').disabled = true;
+        });
+    </script>
+} 

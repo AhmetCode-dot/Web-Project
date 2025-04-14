@@ -1,0 +1,60 @@
+@model IEnumerable<TıbbiTakipSistem.Models.Test>
+
+@{
+    ViewData["Title"] = "Testlerim";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Testlerim</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            Henüz kayıtlı testiniz bulunmamaktadır.
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var test in Model)
+            {
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">@test.Name</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                Test Tarihi: @test.TestDate.ToShortDateString()
+                            </h6>
+
+                            <div class="mt-3">
+                                <strong>Sonuçlar:</strong>
+                                <p>@test.Results</p>
+                            </div>
+
+                            @if (!string.IsNullOrEmpty(test.Notes))
+                            {
+                                <div class="mt-3">
+                                    <strong>Notlar:</strong>
+                                    <p>@test.Notes</p>
+                                </div>
+                            }
+
+                            @if (test.Doctor != null)
+                            {
+                                <p class="card-text mt-3">
+                                    <small class="text-muted">
+                                        İsteyen Doktor: Dr. @test.Doctor.Name @test.Doctor.Surname
+                                        @if (!string.IsNullOrEmpty(test.Doctor.Specialty))
+                                        {
+                                            <span>(@test.Doctor.Specialty)</span>
+                                        }
+                                    </small>
+                                </p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div> 

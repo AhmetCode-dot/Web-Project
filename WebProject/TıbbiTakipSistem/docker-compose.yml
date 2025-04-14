@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+      - "8443:443"
+    depends_on:
+      - db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Server=db;Database=TıbbiTakipDB;User=sa;Password=YourStrong!Password;TrustServerCertificate=True
+      - ASPNETCORE_URLS=http://+:80;https://+:443
+      - ASPNETCORE_HTTPS_PORT=443
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/app/server.crt
+      - ASPNETCORE_Kestrel__Certificates__Default__KeyPath=/app/server.key
+    networks:
+      - tibbi-takip-network
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourStrong!Password
+      - MSSQL_PID=Express
+    ports:
+      - "1433:1433"
+    volumes:
+      - tibbi-takip-db:/var/opt/mssql
+    networks:
+      - tibbi-takip-network
+    restart: always
+    command: /opt/mssql/bin/sqlservr
+
+volumes:
+  tibbi-takip-db:
+
+networks:
+  tibbi-takip-network:
+    driver: bridge 

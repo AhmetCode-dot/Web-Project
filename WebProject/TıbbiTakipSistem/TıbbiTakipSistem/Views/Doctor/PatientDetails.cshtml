@@ -1,0 +1,236 @@
+@model TıbbiTakipSistem.Models.User
+
+@{
+    ViewData["Title"] = "Hasta Detayları";
+    var diseases = ViewBag.Diseases as IEnumerable<TıbbiTakipSistem.Models.Disease> ?? Enumerable.Empty<TıbbiTakipSistem.Models.Disease>();
+    var drugs = ViewBag.Drugs as IEnumerable<TıbbiTakipSistem.Models.Drug> ?? Enumerable.Empty<TıbbiTakipSistem.Models.Drug>();
+    var tests = ViewBag.Tests as IEnumerable<TıbbiTakipSistem.Models.Test> ?? Enumerable.Empty<TıbbiTakipSistem.Models.Test>();
+}
+
+<div class="container mt-4">
+    <div class="mb-4">
+        <h2>@Model.Name @Model.Surname</h2>
+        <p class="text-muted">
+            <i class="bi bi-envelope"></i> @Model.Email
+        </p>
+    </div>
+
+    <div class="row">
+        <!-- Hastalıklar -->
+        <div class="col-md-12 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Hastalıklar</h5>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#addDiseaseModal">
+                        <i class="bi bi-plus-circle"></i> Yeni Hastalık Ekle
+                    </button>
+                </div>
+                <div class="card-body">
+                    @if (!diseases.Any())
+                    {
+                        <p class="text-muted mb-0">Henüz hastalık kaydı bulunmamaktadır.</p>
+                    }
+                    else
+                    {
+                        <div class="list-group">
+                            @foreach (var disease in diseases)
+                            {
+                                <div class="list-group-item">
+                                    <h6 class="mb-1">@disease.Name</h6>
+                                    <p class="mb-1">@disease.Description</p>
+                                    <small class="text-muted">
+                                        Tanı Tarihi: @disease.DiagnosisDate.ToShortDateString()
+                                    </small>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- İlaçlar -->
+        <div class="col-md-12 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">İlaçlar</h5>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#addDrugModal">
+                        <i class="bi bi-plus-circle"></i> Yeni İlaç Ekle
+                    </button>
+                </div>
+                <div class="card-body">
+                    @if (!drugs.Any())
+                    {
+                        <p class="text-muted mb-0">Henüz ilaç kaydı bulunmamaktadır.</p>
+                    }
+                    else
+                    {
+                        <div class="list-group">
+                            @foreach (var drug in drugs)
+                            {
+                                <div class="list-group-item">
+                                    <h6 class="mb-1">@drug.Name</h6>
+                                    <p class="mb-1">
+                                        <strong>Dozaj:</strong> @drug.Dosage<br />
+                                        <strong>Kullanım:</strong> @drug.Instructions
+                                    </p>
+                                    <small class="text-muted">
+                                        Başlangıç: @drug.StartDate.ToShortDateString() | 
+                                        Süre: @drug.DurationInDays gün
+                                    </small>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Testler -->
+        <div class="col-md-12 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Testler</h5>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#addTestModal">
+                        <i class="bi bi-plus-circle"></i> Yeni Test Ekle
+                    </button>
+                </div>
+                <div class="card-body">
+                    @if (!tests.Any())
+                    {
+                        <p class="text-muted mb-0">Henüz test kaydı bulunmamaktadır.</p>
+                    }
+                    else
+                    {
+                        <div class="list-group">
+                            @foreach (var test in tests)
+                            {
+                                <div class="list-group-item">
+                                    <h6 class="mb-1">@test.Name</h6>
+                                    <p class="mb-1">
+                                        <strong>Sonuçlar:</strong> @test.Results<br />
+                                        @if (!string.IsNullOrEmpty(test.Notes))
+                                        {
+                                            <strong>Notlar:</strong> @test.Notes
+                                        }
+                                    </p>
+                                    <small class="text-muted">
+                                        Test Tarihi: @test.TestDate.ToShortDateString()
+                                    </small>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hastalık Ekleme Modal -->
+<div class="modal fade" id="addDiseaseModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="AddDisease" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Yeni Hastalık Ekle</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="UserId" value="@Model.UserId" />
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Hastalık Adı</label>
+                        <input type="text" name="Name" class="form-control" required />
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Açıklama</label>
+                        <textarea name="Description" class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- İlaç Ekleme Modal -->
+<div class="modal fade" id="addDrugModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="AddDrug" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Yeni İlaç Ekle</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="UserId" value="@Model.UserId" />
+                    
+                    <div class="mb-3">
+                        <label class="form-label">İlaç Adı</label>
+                        <input type="text" name="Name" class="form-control" required />
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Dozaj</label>
+                        <input type="text" name="Dosage" class="form-control" required />
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Kullanım Talimatları</label>
+                        <textarea name="Instructions" class="form-control" rows="2" required></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Kullanım Süresi (Gün)</label>
+                        <input type="number" name="DurationInDays" class="form-control" required min="1" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Test Ekleme Modal -->
+<div class="modal fade" id="addTestModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="AddTest" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Yeni Test Ekle</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="UserId" value="@Model.UserId" />
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Test Adı</label>
+                        <input type="text" name="Name" class="form-control" required />
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Sonuçlar</label>
+                        <textarea name="Results" class="form-control" rows="3" required></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Notlar</label>
+                        <textarea name="Notes" class="form-control" rows="2"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> 

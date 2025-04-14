@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background Circle -->
+        <circle fill="#E3F2FD" cx="400" cy="300" r="250"/>
+        
+        <!-- Medical Cross -->
+        <g transform="translate(325,225)">
+            <rect fill="#2196F3" x="0" y="0" width="150" height="150" rx="20"/>
+            <rect fill="white" x="65" y="30" width="20" height="90" rx="5"/>
+            <rect fill="white" x="30" y="65" width="90" height="20" rx="5"/>
+        </g>
+        
+        <!-- Heart Beat Line -->
+        <path d="M100,300 L200,300 L250,200 L300,400 L350,300 L400,300 L450,250 L500,350 L550,300 L700,300" 
+              stroke="#F44336" 
+              stroke-width="4" 
+              fill="none"/>
+        
+        <!-- Stethoscope -->
+        <g transform="translate(500,350)">
+            <circle fill="#424242" cx="50" cy="50" r="20"/>
+            <path d="M50,70 C50,70 50,150 150,150" 
+                  stroke="#424242" 
+                  stroke-width="10" 
+                  fill="none"/>
+        </g>
+    </g>
+</svg> 

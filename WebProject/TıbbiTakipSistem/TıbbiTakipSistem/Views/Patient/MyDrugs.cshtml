@@ -1,0 +1,76 @@
+@model IEnumerable<TıbbiTakipSistem.Models.Drug>
+
+@{
+    ViewData["Title"] = "İlaçlarım";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">İlaçlarım</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            Henüz kayıtlı ilacınız bulunmamaktadır.
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var drug in Model)
+            {
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">@drug.Name</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                Başlangıç: @drug.StartDate.ToShortDateString()
+                                <span class="mx-2">|</span>
+                                Süre: @drug.DurationInDays gün
+                            </h6>
+                            
+                            <div class="mt-3">
+                                <strong>Dozaj:</strong>
+                                <p>@drug.Dosage</p>
+                            </div>
+
+                            <div class="mt-3">
+                                <strong>Kullanım Talimatları:</strong>
+                                <p>@drug.Instructions</p>
+                            </div>
+
+                            @if (drug.Doctor != null)
+                            {
+                                <p class="card-text mt-3">
+                                    <small class="text-muted">
+                                        Yazan Doktor: Dr. @drug.Doctor.Name @drug.Doctor.Surname
+                                        @if (!string.IsNullOrEmpty(drug.Doctor.Specialty))
+                                        {
+                                            <span>(@drug.Doctor.Specialty)</span>
+                                        }
+                                    </small>
+                                </p>
+                            }
+
+                            @{
+                                var endDate = drug.StartDate.AddDays(drug.DurationInDays);
+                                var isActive = DateTime.Now <= endDate;
+                            }
+                            
+                            <div class="mt-3">
+                                <span class="badge @(isActive ? "bg-success" : "bg-secondary")">
+                                    @(isActive ? "Aktif" : "Tamamlandı")
+                                </span>
+                                @if (isActive)
+                                {
+                                    <small class="text-muted ms-2">
+                                        (Bitiş: @endDate.ToShortDateString())
+                                    </small>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div> 

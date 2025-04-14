@@ -1,0 +1,42 @@
+@model IEnumerable<TıbbiTakipSistem.Models.User>
+
+@{
+    ViewData["Title"] = "Hastalarım";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Hastalarım</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            Henüz kayıtlı hastanız bulunmamaktadır.
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var patient in Model)
+            {
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">@patient.Name @patient.Surname</h5>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    <i class="bi bi-envelope"></i> @patient.Email
+                                </small>
+                            </p>
+                            <div class="d-grid">
+                                <a asp-action="PatientDetails" asp-route-id="@patient.UserId" 
+                                   class="btn btn-outline-primary">
+                                    <i class="bi bi-file-medical"></i> Hasta Detayları
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div> 
